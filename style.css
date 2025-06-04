@@ -2,22 +2,48 @@
 
 .product-card {
     /* Centrer la carte, largeur 300px, bordure grise, coins arrondis, padding 20px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .product-card img {
     /* Image responsive, largeur 100%, hauteur 200px, object-fit cover */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .product-card h2 {
     /* Couleur #333, taille 24px, marge verticale 15px */
+    color: #333;
+    font-size: 24px;
+    margin: 15px 0;
 }
 
 .product-card p {
     /* Couleur verte #28a745, gras, taille 20px */
+    color: #28a745;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #add-btn {
     /* Bouton bleu #007bff, texte blanc, padding 10px 20px, sans bordure, coins arrondis, curseur pointer */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* TODO: Ajouter un effet hover sur le bouton (couleur plus foncée) */
+
+#add-btn:hover {
+    background-color: #0056b3;
+}

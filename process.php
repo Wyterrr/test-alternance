@@ -8,6 +8,18 @@
 
 // Votre code ici :
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nom = $_POST['nom'] ?? '';
+    $email = $_POST['email'] ?? '';
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Bonjour $nom, votre email $email est valide.";
+    } else {
+        echo "Email invalide.";
+    }
+} else {
+    echo "Aucun formulaire soumis.";
+}
+
 ?>
 
 <!-- Formulaire de test (ne pas modifier) -->

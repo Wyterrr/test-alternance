@@ -5,3 +5,12 @@
 // 4. Afficher une alerte "Produit ajouté au panier !"
 
 // Votre code ici :
+
+bouton = document.querySelector('button');
+bouton.addEventListener('click', function() {
+    bouton.textContent = 'Ajouté ✓';    
+    bouton.disabled = true;    
+    bouton.style.backgroundColor = 'green';
+    
+    alert('Produit ajouté au panier !');
+});
